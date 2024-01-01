@@ -149,7 +149,145 @@ print(response_content)
 ```
 ...................
 ```
-   
+
+# 4.4 Sample Code for lyric creation with temperature = 0
+
+```
+# With n = 1, that means the number of stream back from OpenAI, max_tokens is 15 
+# per response from OpenAI, temperature = 0 i.e., the deterministic behavior is strict
+
+
+from openai import OpenAI
+import time
+
+client = OpenAI()
+
+# initial prompt with system message and 2 task examples
+messages_list = [{"role":"system", "content": "I am Roxette lyric completion assistant. When given a line from a song, I will provide the next line in the song."},
+                 {"role":"user", "content": "I know there's something in the wake of your smile"},
+                 {"role":"assistant", "content": "I get a notion from the look in your eyes, yeah"},
+                 {"role":"user", "content": "You've built a love but that love falls apart"},
+                 {"role":"assistant", "content": "Your little piece of Heaven turns too dark"},
+                 {"role":"user", "content": "Listen to your"}]
+
+
+
+
+for i in range(4):
+    # create a chat completion
+    chat_completion = client.chat.completions.create(model="gpt-4", 
+                                    messages=messages_list,
+                                    max_tokens = 15,
+                                    n=1,
+                                    temperature=0)
+
+    # print the chat completion
+    print(chat_completion.choices[0].message.content)
+
+    new_message = {"role":"assistant", "content":chat_completion.choices[0].message.content} # append new message to message list
+    messages_list.append(new_message)
+    time.sleep(0.1)
+
+```
+
+**Output**
+```
+...................
+```
+
+
+# 4.5 Sample Code for lyric creation with temperature = 1
+
+```
+# With n = 1, that means the number of stream back from OpenAI, max_tokens is 15 
+# per response from OpenAI, temperature = 0 i.e., the deterministic behavior is less strict
+# but the resturn of response is still good enough
+
+
+from openai import OpenAI
+import time
+
+client = OpenAI()
+
+# initial prompt with system message and 2 task examples
+messages_list = [{"role":"system", "content": "I am Roxette lyric completion assistant. When given a line from a song, I will provide the next line in the song."},
+                 {"role":"user", "content": "I know there's something in the wake of your smile"},
+                 {"role":"assistant", "content": "I get a notion from the look in your eyes, yeah"},
+                 {"role":"user", "content": "You've built a love but that love falls apart"},
+                 {"role":"assistant", "content": "Your little piece of Heaven turns too dark"},
+                 {"role":"user", "content": "Listen to your"}]
+
+
+
+
+for i in range(4):
+    # create a chat completion
+    chat_completion = client.chat.completions.create(model="gpt-4", 
+                                    messages=messages_list,
+                                    max_tokens = 15,
+                                    n=1,
+                                    temperature=1)
+
+    # print the chat completion
+    print(chat_completion.choices[0].message.content)
+
+    new_message = {"role":"assistant", "content":chat_completion.choices[0].message.content} # append new message to message list
+    messages_list.append(new_message)
+    time.sleep(0.1)
+
+```
+
+**Output**
+```
+...................
+```
+
+
+# 4.5 Sample Code for lyric creation with temperature = 2
+
+```
+# With n = 1, that means the number of stream back from OpenAI, max_tokens is 15 
+# per response from OpenAI, temperature = 2 i.e., the deterministic behavior is very loose and
+# responses are very random
+
+
+from openai import OpenAI
+import time
+
+client = OpenAI()
+
+# initial prompt with system message and 2 task examples
+messages_list = [{"role":"system", "content": "I am Roxette lyric completion assistant. When given a line from a song, I will provide the next line in the song."},
+                 {"role":"user", "content": "I know there's something in the wake of your smile"},
+                 {"role":"assistant", "content": "I get a notion from the look in your eyes, yeah"},
+                 {"role":"user", "content": "You've built a love but that love falls apart"},
+                 {"role":"assistant", "content": "Your little piece of Heaven turns too dark"},
+                 {"role":"user", "content": "Listen to your"}]
+
+
+
+
+for i in range(4):
+    # create a chat completion
+    chat_completion = client.chat.completions.create(model="gpt-4", 
+                                    messages=messages_list,
+                                    max_tokens = 15,
+                                    n=1,
+                                    temperature=2)
+
+    # print the chat completion
+    print(chat_completion.choices[0].message.content)
+
+    new_message = {"role":"assistant", "content":chat_completion.choices[0].message.content} # append new message to message list
+    messages_list.append(new_message)
+    time.sleep(0.1)
+
+```
+
+**Output**
+```
+...................
+```
 
 Reference:
 1. https://platform.openai.com/docs/quickstart?context=python
