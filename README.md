@@ -337,5 +337,7 @@ Listen to your#undef[$calendar-toolbar-Shighb458CAST)view enacted imaginable fla
 Heart there's nothing else you can do
 ```
 
-Reference:
+**References**
+
 1. https://platform.openai.com/docs/quickstart?context=python
+2. https://github.com/ShawhinT/YouTube-Blog/tree/main/LLMs/openai-api
