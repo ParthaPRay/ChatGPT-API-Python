@@ -1,28 +1,40 @@
 # ChatGPT-API-Python
 This repo contains the process to connect ChatGPT API by Python
 
-0. Use **Python**
+0. # Use **Python**
 
-1. (**Optional**) Use Python Virtual Environment in Windows:
+1. # (**Optional**) Use Python Virtual Environment in Windows:
 
    Create "openai-env" inside the current folder you have selected in your terminal / command line:
   
-   **python -m venv openai-env**
+```python
+   python -m venv openai-env
+```
 
    Activate it:
    
-   **openai-env\Scripts\activate**
+   ```
+   openai-env\Scripts\activate
+   ```
 
 
-    For MacOS or UNIX use: **source openai-env/bin/activate**
+    For MacOS or UNIX use: 
 
-2. Install OpenAI Python Library
+    ```
+    source openai-env/bin/activate
+    ```
 
-   **pip install openai**
+3. # Install OpenAI Python Library
+
+   ```python
+   pip install openai
+   ```
    or
-   **pip install --upgrade openai**
+   ```python
+   pip install --upgrade openai
+   ```
 
-3. Setup API Key from **https://platform.openai.com/** after logging in your own account when Billing of minimum USD 5 should be there in your acount for accessng the API access purpose
+4. # Setup API Key from **https://platform.openai.com/** after logging in your own account when Billing of minimum USD 5 should be there in your acount for accessng the API access purpose
 
 ![image](https://github.com/ParthaPRay/ChatGPT-API-Python/assets/1689639/2333a653-c325-4f12-8135-7ec753d5cf56)
 
@@ -42,7 +54,9 @@ For permanent setup:
 
 For verification check:
 
-**echo %OPENAI_API_KEY%**
+```
+echo %OPENAI_API_KEY%
+```
 
 ==================================================================================================================================
 
@@ -50,10 +64,12 @@ For single project deployment:
 
 Create an **.env** file in your project folder and put the below line. Replace 'your_api_key' with your own API key such as sk-***********
 
-OPENAI_API_KEY = your_api_key
+```
+OPENAI_API_KEY = **your_api_key**
+```
 
 
-4. Use below code
+5. # Use below code
 
 ```python
 from openai import OpenAI
