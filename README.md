@@ -1,5 +1,5 @@
 # ChatGPT-API-Python
-This repo contains the process to connect ChatGPT API by Python. The 'ChatGPT4-API-Python.ipynb' file contains the codes.
+This repo contains the process to connect ChatGPT API by Python. The '_ChatGPT4-API-Python.ipynb_' file contains the codes.
 
 # 0.  Use **Python**
 
