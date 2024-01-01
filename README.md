@@ -1,7 +1,7 @@
 # ChatGPT-API-Python
 This repo contains the process to connect ChatGPT API by Python
 
-0. # Use **Python**
+# 0.  Use **Python**
 
 # 1.  (**Optional**) Use Python Virtual Environment in Windows:
 
