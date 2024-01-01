@@ -68,6 +68,9 @@ Create an **.env** file in your project folder and put the below line. Replace *
 OPENAI_API_KEY = your_api_key
 ```
 
+![image](https://github.com/ParthaPRay/ChatGPT-API-Python/assets/1689639/0ff1a0e5-54e0-4f1c-b53d-e226de1abc98)
+
+
 
 # 4.1. Sample Code
 
