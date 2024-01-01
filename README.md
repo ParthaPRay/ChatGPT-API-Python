@@ -44,8 +44,7 @@ Then in Windows, Set environment variable in the current session:
 
 ![Screenshot 2024-01-01 225826](https://github.com/ParthaPRay/ChatGPT-API-Python/assets/1689639/fd5e1620-3404-4534-b4fe-fd62e1f3c3f1)
 
-===============================================================================================================================
-For permanent setup:
+**For permanent setup:**
 
 * Right-click on 'This PC' or 'My Computer' and select 'Properties'.
 * Click on 'Advanced system settings'.
@@ -58,9 +57,8 @@ For verification check:
 echo %OPENAI_API_KEY%
 ```
 
-==================================================================================================================================
 
-For single project deployment:
+**For single project deployment:**
 
 Create an **.env** file in your project folder and put the below line. Replace 'your_api_key' with your own API key such as sk-***********
 
