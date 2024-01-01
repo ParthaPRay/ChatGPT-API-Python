@@ -1,7 +1,7 @@
 # ChatGPT-API-Python
 This repo contains the process to connect ChatGPT API by Python
 
-0. Use Python
+0. Use **Python**
 
 1. (**Optional**) Use Python Virtual Environment in Windows:
 
@@ -55,7 +55,7 @@ OPENAI_API_KEY = your_api_key
 
 4. Use below code
 
-   ```python
+```
 from openai import OpenAI
 client = OpenAI()
 
@@ -68,6 +68,9 @@ completion = client.chat.completions.create(
 )
 
 print(completion.choices[0].message)
+```
+
+
 
 
    
