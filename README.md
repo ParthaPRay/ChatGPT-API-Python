@@ -341,3 +341,4 @@ Heart there's nothing else you can do
 
 1. https://platform.openai.com/docs/quickstart?context=python
 2. https://github.com/ShawhinT/YouTube-Blog/tree/main/LLMs/openai-api
+3. https://www.youtube.com/watch?v=czvVibB2lRA&t=738s
