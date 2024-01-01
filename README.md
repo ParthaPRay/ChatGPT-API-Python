@@ -3,7 +3,7 @@ This repo contains the process to connect ChatGPT API by Python
 
 0. # Use **Python**
 
-1. # (**Optional**) Use Python Virtual Environment in Windows:
+# 1.  (**Optional**) Use Python Virtual Environment in Windows:
 
    Create "openai-env" inside the current folder you have selected in your terminal / command line:
   
@@ -24,7 +24,7 @@ This repo contains the process to connect ChatGPT API by Python
     source openai-env/bin/activate
     ```
 
-3. # Install OpenAI Python Library
+# 2. Install OpenAI Python Library
 
    ```python
    pip install openai
@@ -34,7 +34,7 @@ This repo contains the process to connect ChatGPT API by Python
    pip install --upgrade openai
    ```
 
-4. # Setup API Key from **https://platform.openai.com/** after logging in your own account when Billing of minimum USD 5 should be there in your acount for accessng the API access purpose
+# 3. Setup API Key from **https://platform.openai.com/** after logging in your own account when Billing of minimum USD 5 should be there in your acount for accessng the API access purpose
 
 ![image](https://github.com/ParthaPRay/ChatGPT-API-Python/assets/1689639/2333a653-c325-4f12-8135-7ec753d5cf56)
 
@@ -67,7 +67,9 @@ OPENAI_API_KEY = **your_api_key**
 ```
 
 
-5. # Use below code
+# 4. Use Codes:
+
+**Making API Request**
 
 ```python
 from openai import OpenAI
