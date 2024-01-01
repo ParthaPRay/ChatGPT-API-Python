@@ -152,6 +152,41 @@ print(response_content)
 
 # 4.4 Sample Code for lyric creation with temperature = 0
 
+The Initial Messages Setup in the code is a crucial part of simulating a conversation with the OpenAI GPT model. This setup is achieved through the **messages_list**, which is a list of dictionaries. Each dictionary in this list represents a single message in the conversation, and these messages are used to establish the context for the AI's responses. Let's break down this initial setup:
+
+The initial messages are designed to create a context for the conversation. In this script, the context is set for an AI assistant that helps complete lyrics from Roxette songs. This initial setup guides the AI's responses to follow the theme of completing song lyrics.
+
+Each dictionary in the list represents a message in the conversation.
+The **role** key in each dictionary specifies who is 'speaking' the message. The roles can be **"system"**, **"user"**, or **"assistant"**.
+* **"system"**: Provides instructions or information about the conversation's context or rules. In this case, it describes the AI's role as a lyric completion assistant.
+* **"user":** Represents messages that would typically come from the human user. These are often prompts or questions to which the AI responds.
+* **"assistant":** Represents the AI's responses. In this case, they are lines from Roxette songs that follow the user's prompts.
+
+
+* The **"system"** message sets the stage, explaining the AI's function.
+* The **"user"** and "assistant" messages simulate a back-and-forth interaction, with the user providing a line from a Roxette song and the assistant responding with the next line.
+
+By setting up these initial messages, the script creates a starting point for the AI to understand the nature of the conversation and respond appropriately. This initial context is essential for guiding the AI's responses in a manner that aligns with the intended use case of the script, which in this instance is to complete song lyrics.
+
+**Description**
+
+The system i.e. _Roxette lyric completion assistant_, first starts chating with user.
+
+User then responds back.
+
+The assistant role then talks back.
+
+User again talks to assistant.
+
+Assistant again talks to user back.
+
+Lastly, user wants the next lyric after **"Listen to your"...**
+
+
+The code outputs the next lyric after **"Listen to your"...**
+
+
+
 ```
 # With n = 1, that means the number of stream back from OpenAI, max_tokens is 15 
 # per response from OpenAI, temperature = 0 i.e., the deterministic behavior is strict
@@ -192,7 +227,10 @@ for i in range(4):
 
 **Output**
 ```
-...................
+Heart when he's calling for you.
+Listen to your heart, there's nothing else you can do.
+Heart when he's calling for you.
+Heart when he's calling for you.
 ```
 
 
@@ -239,7 +277,10 @@ for i in range(4):
 
 **Output**
 ```
-...................
+Heart when he's calling for you.
+Heart when he's calling for you.
+Heart when he's calling for you.
+Heart when he's calling for you.
 ```
 
 
@@ -286,7 +327,11 @@ for i in range(4):
 
 **Output**
 ```
-...................
+Heart when he's calling for you
+Creditregor_TERMINATION MyWebsite++++++++++++++++.toolbox-pr_asschant and consc_disable_
+
+Listen to your#undef[$calendar-toolbar-Shighb458CAST)view enacted imaginable flatten
+Heart there's nothing else you can do
 ```
 
 Reference:
