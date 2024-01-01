@@ -118,7 +118,7 @@ print(completion.choices[0].message)
 
 **Output**
 ```
-ChatCompletionMessage(content='Within the puzzling world of codes so deep,\nLies a pattern so cunning, it lulls data to sleep.\nA function that mirrors the echoing canyon,\nBehold the enigma we call recursion!\n\nA method, a function, calls its own name,\nIn a loop of echoes that plays the game.\nEach call a reflection of the timeless verse,\nOf self-reference, there could be nothing worse.\n\n"Compute thyself!" an order is passed,\nA whisper to the next, "Replicate tasks."\nGather and jumble, yet stay in line,\nCompress and return, such marvels combine!\n\nA base case beckons, the end is near,\nA condition to halt, else the loop you\'ll wear.\nWithout the key, the function implores,\nIn an infinite maze of self-inflicted chores.\n\nUnwinding the spool, one layer at a time,\nThe return values ascend in perfect rhyme.\nEvery iteration is a step towards the tale,\nThat the master function wishes to unveil.\n\nPatterns that blossom, rules that abide,\nData structures transformed in recursive stride.\nFrom factorials to Fractals, the Fibonacci day,\nIn the recursive call, find power they say.\n\nTo fathom recursion, constant practice you need,\nFor it\'s not mere repetition, but a digital seed.\nOnce you embrace it, there\'s no looking back,\nIts elegance, its simplicity, leaves no slack.\n\nBeware of the depth, the stack might overflow,\nHope the error message doesn\'t steal the show.\nRecursion, my friend, is straightforward but coy,\nWield it with wisdom, its beauty to enjoy.', role='assistant', function_call=None, tool_calls=None)
+ChatCompletionMessage(content='........', role='assistant', function_call=None, tool_calls=None)
 ```
 
 
@@ -147,45 +147,7 @@ print(response_content)
 
 **Output**
 ```
-Within the puzzling world of codes so deep,
-Lies a pattern so cunning, it lulls data to sleep.
-A function that mirrors the echoing canyon,
-Behold the enigma we call recursion!
-
-A method, a function, calls its own name,
-In a loop of echoes that plays the game.
-Each call a reflection of the timeless verse,
-Of self-reference, there could be nothing worse.
-
-"Compute thyself!" an order is passed,
-A whisper to the next, "Replicate tasks."
-Gather and jumble, yet stay in line,
-Compress and return, such marvels combine!
-
-A base case beckons, the end is near,
-A condition to halt, else the loop you'll wear.
-Without the key, the function implores,
-In an infinite maze of self-inflicted chores.
-
-Unwinding the spool, one layer at a time,
-The return values ascend in perfect rhyme.
-Every iteration is a step towards the tale,
-That the master function wishes to unveil.
-
-Patterns that blossom, rules that abide,
-Data structures transformed in recursive stride.
-From factorials to Fractals, the Fibonacci day,
-In the recursive call, find power they say.
-
-To fathom recursion, constant practice you need,
-For it's not mere repetition, but a digital seed.
-Once you embrace it, there's no looking back,
-Its elegance, its simplicity, leaves no slack.
-
-Beware of the depth, the stack might overflow,
-Hope the error message doesn't steal the show.
-Recursion, my friend, is straightforward but coy,
-Wield it with wisdom, its beauty to enjoy.
+...................
 ```
    
 
