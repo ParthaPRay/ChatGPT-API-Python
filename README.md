@@ -55,7 +55,7 @@ OPENAI_API_KEY = your_api_key
 
 4. Use below code
 
-```
+```python
 from openai import OpenAI
 client = OpenAI()
 
